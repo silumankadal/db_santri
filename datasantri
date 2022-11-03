@@ -1,0 +1,9 @@
+Santri::create([
+    'nama'=>'Aditya Febriansyah',
+    'slug'=>'aditya-febriansyah',
+    'gender'=>'L',
+    'alamat'=>'Perum Pt Pupuk Kujang, Kec Cikampek, Kab Karawang',
+    'pt'=>'Universitas Diponegoro',
+    'jurusan'=>'Ekonomi Islam',
+    'status'=>'Tidak Aktif'
+])
