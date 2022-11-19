@@ -8,5 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Santri extends Model
 {
     use HasFactory;
-    protected $guarded = ['id'];
+    protected $table = 'santris';
+    protected $fillable = [
+        'nama',
+        'gender',
+        'alamat',
+        'pt',
+        'jurusan',
+        'status'
+    ];
+    public $timestamps = false;
 }

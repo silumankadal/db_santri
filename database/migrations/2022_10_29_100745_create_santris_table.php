@@ -16,15 +16,11 @@ return new class extends Migration
         Schema::create('santris', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->string('slug')->unique();
             $table->string('gender');
             $table->string('alamat');
             $table->string('pt');
             $table->string('jurusan');
             $table->string('status');
-            $table->timestamp('published_at')->nullable();
-            $table->timestamps();
-
         });
     }
 

@@ -21,19 +21,8 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/about', function () {
-    return view('about', [
-        "title" => "about"
-    ]);
-});
-
-Route::get('/santri', [SantriController::class, 'index']);
-
-Route::get('santri/{data:slug}', [SantriController::class, 'show']);
-
-Route::get('/add', function(){
-    return view('add',[
-        "title" => "tambah santri"
-    ]);
-});
-
+Route::get('santri', [SantriController::class, 'index'])->name('santri');
+Route::post('santri/store', [SantriController::class,  'store'])->name('santri.store');
+Route::post('santri/update/{id}', [SantriController::class,  'update'])->name('santri.update');
+Route::post('santri/destroy/{id}', [SantriController::class,  'destroy'])->name('santri.destroy');
+Route::get('santri/search', [SantriController::class,  'search'])->name('santri.search');
