@@ -203,10 +203,4 @@
         </div>
     </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
 </div>
-
-<script type="text/javascript">
-$(document).ready(function() {
-    $('.data').DataTable();
-});
-</script>
 @stop

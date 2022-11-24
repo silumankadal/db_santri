@@ -188,11 +188,11 @@
     <script src="{{ asset('vendor/datatables/dataTables.bootstrap4.min.js') }}"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js">
     </script>
-    <!-- <script type="text/javascript">
+    <script type="text/javascript">
     $(document).ready(function() {
         $('.data').DataTable();
     });
-    </script> -->
+    </script>
 </body>
 
 </html>
