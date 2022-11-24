@@ -50,6 +50,7 @@ class AuthController extends Controller
   
         if (Auth::check()) { // true sekalian session field di users nanti bisa dipanggil via Auth
             //Login Success
+            session()->flash('success', 'You are logged in!');
             return redirect()->route('home');
   
         } else { // false

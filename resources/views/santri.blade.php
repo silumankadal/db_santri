@@ -79,7 +79,7 @@
                                     @foreach($mysantri as $data)
                                     <tr>
                                         <td class="namecntr"><img class="rounded-circle mr-2" width="30" height="30"
-                                                src="{{ asset('img/avatars/avatar5.jpeg') }}"><?=$data['nama']?>
+                                                src="{{ asset('img/user.png') }}"><?=$data['nama']?>
                                         </td>
                                         <td><?=$data['gender']?></td>
                                         <td><?=$data['alamat']?></td>
@@ -203,15 +203,7 @@
         </div>
     </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
 </div>
-<script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
-<script src="{{ asset('vendor/bootstrap/js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('vendor/jquery-easing/jquery.easing.min.js') }}"></script>
-<script src="{{ asset('js/sb-admin-2.min.js') }}"></script>
-<script src="{{ asset('js/theme.js') }}"></script>
-<script src="{{ asset('vendor/datatables/jquery.dataTables.min.js') }}"></script>
-<script src="{{ asset('vendor/datatables/dataTables.bootstrap4.min.js') }}"></script>
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+
 <script type="text/javascript">
 $(document).ready(function() {
     $('.data').DataTable();

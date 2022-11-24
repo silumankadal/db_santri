@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SantriController;
+use App\Http\Controllers\PengaturanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,5 +29,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('santri/update/{id}', [SantriController::class,  'update'])->name('santri.update');
     Route::post('santri/destroy/{id}', [SantriController::class,  'destroy'])->name('santri.destroy');
     Route::get('santri/search', [SantriController::class,  'search'])->name('santri.search');
+    Route::get('/pengaturan', [PengaturanController::class,  'index'])->name('pengaturan');
+    Route::put('/pengaturan', [PengaturanController::class,  'update'])->name('pengaturan.update');
     Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 });

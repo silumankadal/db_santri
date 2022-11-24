@@ -11,7 +11,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Sistem Manajemen Data Mahasantri</title>
 
     <!-- Fonts -->
     <link href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
@@ -74,24 +74,9 @@
                 </a>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Data Santri</span>
-                </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Menu:</h6>
-                        <a class="collapse-item" href="{{ route('santri') }}">List Santri</a>
-                        <a class="collapse-item" href="#">Import Data</a>
-                    </div>
-                </div>
-            </li>
-
             <!-- Nav Item - Pengaturan -->
             <li class="nav-item">
-                <a class="nav-link" href="">
+                <a class="nav-link" href="{{ route('pengaturan') }}">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>{{ __('Pengaturan') }}</span>
                 </a>
@@ -124,9 +109,10 @@
                             <li class="nav-item dropdown no-arrow" role="presentation">
                                 <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link"
                                         data-toggle="dropdown" aria-expanded="false" href="#"><span
-                                            class="d-none d-lg-inline mr-2 text-gray-600 small">{{auth()->user()->name}}</span><img
-                                            class="border rounded-circle img-profile"
-                                            src="{{ asset('img/avatars/avatar1.jpeg') }}" /></a>
+                                            class="d-none d-lg-inline mr-2 text-gray-600 small">{{auth()->user()->name}}</span>
+                                        <figure class="img-profile rounded-circle avatar font-weight-bold"
+                                            data-initial="{{ Auth::user()->name[0] }}"></figure>
+                                    </a>
                                     <div class="dropdown-menu shadow dropdown-menu-right animated--grow-in" role="menu">
                                         <a class="dropdown-item" href="#" data-toggle="modal"
                                             data-target="#logoutModal">
