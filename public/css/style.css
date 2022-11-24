@@ -1,3 +1,68 @@
-body{
-    background-color: salmon;
+.table td, .table th {
+  padding: .75rem;
+  vertical-align: middle;
+  border-top: 1px solid #e3e6f0;
+  /*margin-top: auto !important;*/
+  /*margin-bottom: auto !important;*/
 }
+
+.iconedit {
+  vertical-align: middle;
+}
+
+.icondelete {
+  vertical-align: middle;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+.drag-area {
+  height: 200px;
+  width: 437px;
+  border: 2px dashed #e0eafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px auto;
+}
+
+h3 {
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.drag-area .icon {
+  font-size: 44px;
+  color: #1683ff;
+}
+
+.drag-area .header {
+  font-size: 17px;
+  font-weight: 500;
+  color: #34495e;
+}
+
+.drag-area .support {
+  font-size: 12px;
+  color: gray;
+  margin: 10px 0 15px 0;
+}
+
+.drag-area .button {
+  font-size: 17px;
+  font-weight: 500;
+  color: #1683ff;
+  cursor: pointer;
+}
+
+.drag-area.active {
+  border: 2px solid #1683ff;
+}
+
+.drag-area img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
